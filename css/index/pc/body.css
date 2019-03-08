@@ -1,0 +1,90 @@
+/* 内容区 */
+body > .展示 section {
+    box-sizing: border-box;
+    clear: both;
+    background: #fff;
+    padding-top: 15px;
+}
+
+/* 一格文章 */
+.conins {
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #737373;
+}
+
+/* 样式展示 */
+.conins > div {
+    height: 300px;
+    display: flex;
+    clear: both;
+    overflow-x: auto;
+}
+
+/* 展示的图片 */
+.conins > div > img {
+    height: 98%;
+    margin: 0 5px;
+}
+
+/* 标题栏 */
+.conins > .icons {
+    padding-top: 0;
+    width: 100%;
+    height: 55px;
+    text-align: left;
+}
+
+/* 主题介绍 */
+.主题介绍 {
+    box-sizing: border-box;
+    font-size: 15pt;
+    color: #3e3e3e;
+    margin: 0;
+    padding: 10px 0 0;
+    height: 100%;
+}
+
+/* 副主题 */
+.conins > .icons > h1 small {
+    font-size: small;
+    color: #455cff;
+}
+
+/* 下载按钮 */
+.conins > .icons > h1 button {
+    font-family: 微软雅黑, arial;
+    padding: 10px 35px;
+    color: #fff;
+    font-size: 15px;
+    content: "下载";
+    margin: 0 5px 0 0;
+    float: right;
+    background: #455cff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #455cff;
+    transition: .5s;
+}
+
+/* 下载按钮动画 */
+.conins > .icons > h1 button:hover {
+    box-shadow: 0 0 15px #3141b4;
+}
+
+/* 作者 */
+.conins > .aouter {
+    padding-top: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+/* 作者图标动画 */
+.conins > .aouter img {
+    transition: 1s;
+}
+
+/* 作者图标动画 */
+.conins > .aouter img:hover {
+    box-shadow: 0 0 15px #000;
+}

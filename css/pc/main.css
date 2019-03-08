@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, img, ol, ul, li, table, th, td, p, span, a {
+    border: 0;
+}
+
+img, input {
+    border: none;
+    vertical-align: middle;
+}
+
+body {
+    font-family: 微软雅黑, arial;
+    font-size: 12px;
+    text-align: center;
+    background: #FFF;
+    color: #000;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+th, td, input {
+    font-size: 12px;
+}
+
+input {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+    outline: none;
+}
+
+select {
+    border-width: 1px;
+    _zoom: 1;
+    border-style: solid;
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #f60;
+}
+
+/* 外框架 */
+.框架 {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    z-index: 49;
+}
+
+/* 展示的部分的框架 */
+.展示 {
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.展示 > * {
+    margin: auto;
+    max-width: 840px;
+}
+
+/* 首尾样式 */
+.首尾 {
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: auto;
+    z-index: 50;
+}
+
+.floaleft {
+    float: left;
+}
+
+/* 图标 */
+.icon {
+    height: 90%;
+    margin: 0 1.5%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #9f9f9f;
+}
+
+/* 上部缩进 */
+.topma {
+    margin-top: 10px;
+}

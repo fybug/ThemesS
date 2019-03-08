@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助</title>
+
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+
+    <link href="css/pc/main.css" rel="stylesheet"/>
+    <link href="css/pc/foot.css" rel="stylesheet"/>
+    <link href="css/pc/header.css" rel="stylesheet"/>
+    <link href="css/help/pc/body.css" rel="stylesheet"/>
+
+</head>
+<body>
+<!-- 页首 -->
+<div class="框架">
+    <header class="首尾"><h2>fybug 主题站 - 帮助</h2></header>
+</div>
+<!-- 内容 -->
+<div class="展示 content">
+    <section>
+        <h1>下载：</h1>
+        <p>
+            回到
+            <button value="./">主页</button>
+            找到你心仪的主题，点击
+            <button value="./">下载按钮</button>
+            下载 <b>.hwt</b> 文件后，找到你下载的文件夹，不知道的去浏览器的菜单找到下载，看看有没有从文件夹打开或显示了下载文件夹
+            如果没有，先去 <b>Download</b> 文件夹下寻找。
+        </p>
+        <h1>使用：</h1>
+        <p>
+            找到你的 <b>文件管理器</b> 就是你平时打开文件找文件的地方
+            主题放到这些文件夹里，<b>不要</b> 在里面 <b>又建一个文件夹</b> ,直接放进去即可
+            如果没有再建一个文件夹， <b>菜单</b> 看看有没有 <b>新建文件夹</b><br/>
+            <br/>
+            <b>放置位置:</b><br/>
+            <br/>
+            <i>8.0+ /huawei/Themes/</i><br/>
+            <br/>
+            <i>8.0- /hwthemes/</i><br/>
+            <br/>
+            然后去 <b>主题商店</b> 设置主题即可
+        </p>
+    </section>
+</div>
+<!-- 页尾 -->
+<div class="框架">
+    <div class="展示 foot">
+        <footer class="首尾">
+            <a href="">
+                <img class="icon copyrihjyicon"
+                     src="static/img/fybug.png">
+            </a>
+            <p>© fybug/风雨bu改</p><br/>
+            <s>我讨厌设计界面的说。。。。</s>
+        </footer>
+    </div>
+</div>
+</body>
+
+<script>
+    $(".content>section>p>button").click(function () {
+        window.open(this.value);
+    });
+</script>
+<script src="js/foot.js"></script>
+
+</html>

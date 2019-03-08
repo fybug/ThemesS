@@ -1,0 +1,27 @@
+/* 页尾 */
+body > .框架 footer {
+    color: #fff;
+    background: #455cff;
+    box-sizing: revert;
+    box-shadow: 0 0 10px #6983ff;
+    border-radius: 8px;
+}
+
+/* 脚部边距 */
+body .foot {
+    margin-top: 20px;
+}
+
+/* 站长图标 */
+.copyrihjyicon {
+    box-shadow: 0 0 5px #fff;
+    height: 50px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    transition: 1s;
+}
+
+/* 站长图标动画 */
+.copyrihjyicon:hover {
+    box-shadow: 0 0 20px #fff;
+}
