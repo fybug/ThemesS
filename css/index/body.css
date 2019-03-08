@@ -55,13 +55,13 @@ body > .showS section {
     color: #455cff;
 }
 
-/* 下载按钮 */
-.conins > .icons > h1 button {
+/* 按钮 */
+.downbutton {
+    box-sizing: border-box;
     font-family: 微软雅黑, arial;
     padding: 10px 35px;
     color: #fff;
     font-size: 15px;
-    content: "下载";
     margin: 0 5px 0 0;
     float: right;
     background: #455cff;
@@ -71,19 +71,24 @@ body > .showS section {
 }
 
 /* 下载按钮动画 */
-.conins > .icons > h1 button:hover {
+.downbutton:hover {
     box-shadow: 0 0 15px #3141b4;
+}
+
+/* 下载按钮 */
+.conins > .icons > h1 button {
+    margin-top: -5px;
 }
 
 /* 作者 */
 .conins > .aouter {
     padding-top: 0;
+    clear: both;
     width: 100%;
     height: 80px;
-    text-align: center;
 }
 
-/* 作者图标动画 */
+/* 作者图标 */
 .conins > .aouter img {
     transition: 1s;
 }
@@ -91,6 +96,11 @@ body > .showS section {
 /* 作者图标动画 */
 .conins > .aouter img:hover {
     box-shadow: 0 0 15px #000;
+}
+
+/* 捐献按钮 */
+.conins > .aouter button {
+    margin-top: 30px;
 }
 
 /* 帮助按钮 */
@@ -135,6 +145,7 @@ body > .showS section {
     box-shadow: 0 0 10px rgba(61, 61, 61, 0.72);
 }
 
+/* t o d o 标题 */
 #todo > h2 {
     font-weight: bold;
     margin: 10px 0 10px 40px;

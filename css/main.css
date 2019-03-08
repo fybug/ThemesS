@@ -68,6 +68,10 @@ a:hover, a:active {
     color: #f60;
 }
 
+.hidenow {
+    visibility: hidden;
+}
+
 /* 外框架 */
 .frmwork {
     box-sizing: border-box;
@@ -85,7 +89,7 @@ a:hover, a:active {
 /* 规定最大长度 */
 .showS > * {
     margin: auto;
-    max-width: 600px;
+    max-width: 660px;
 }
 
 /* 首尾样式 */

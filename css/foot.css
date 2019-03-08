@@ -9,7 +9,9 @@ body > .frmwork footer {
 
 /* 脚部边距 */
 body .foot {
+    display: block;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* 站长图标 */

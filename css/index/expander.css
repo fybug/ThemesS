@@ -13,10 +13,27 @@
     justify-content: center;
 }
 
-#see > img {
-    max-width: 100%;
-    height: 100%;
+#see > #screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 2%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     box-sizing: border-box;
-    border: 10px rgba(255, 255, 255, 0) solid;
-    padding: 0;
+}
+
+#aoutDonate {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.5);
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    clear: both;
 }

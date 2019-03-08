@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.png" type="image/x-icon"/>
-    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fybug</title>
 
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
 
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/foot.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index/phone/expander.css" media="handheld"/>
+    <link rel="stylesheet" href="css/index/pc/expander.css" media="screen"/>
     <link href="css/header.css" rel="stylesheet"/>
-    <link href="css/index/body.css" rel="stylesheet">
-    <link href="css/index/expander.css" rel="stylesheet">
+    <link href="css/index/body.css" rel="stylesheet"/>
+    <link href="css/index/expander.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -41,7 +43,7 @@
                 </a>
                 <h1 class="TtileAlt">原OS
                     <small>EMUI8.0及以下</small>
-                    <button value="static/huawei/yuanOS.hwt">下载</button>
+                    <button value="static/huawei/yuanOS.hwt" class="downbutton">下载</button>
                 </h1>
             </section>
             <!-- 图片展示 -->
@@ -57,17 +59,17 @@
             <!-- 作者 -->
             <section class="aouter">
                 <a href="http://www.coolapk.com/u/1692548">
-                    <img title="Masuku" class="icon topma"
+                    <img title="Masuku" class="icon topma floaleft"
                          src="static/img/117fa4ac2f5cc628967ce63d5112c3f9.jpg"
                          alt=""/>
                 </a>
+                <button class="downbutton">捐献</button>
             </section>
         </section>
         <!-- T O D O -->
         <div id="todo">
             <h2>预计增加功能:</h2>
             <p>增加导航栏</p>
-            <p>增加作者捐献功能</p>
             <p>往站长头像上加点东西...</p>
             <p>增加站长捐献</p>
         </div>
@@ -81,14 +83,19 @@
                 <img class="icon copyrihjyicon"
                      src="static/img/fybug.png">
             </a>
-            <p>© fybug/风雨bu改</p><br/>
+            <p>© fybug / 风雨bu改</p><br/>
             <s>我讨厌设计界面的说。。。。</s>
         </footer>
     </div>
 </div>
-<!-- todo 准备点击效果 -->
-<div id="see">
-    <img src="" alt=""/>
+
+<div id="see" class="hidenow">
+    <img id="screen" src="" alt=""/>
+</div>
+<div id="aoutDonate" class="hidenow">
+    <img id="qqplay" src="" alt="">
+    <img id="wechatplay" src="" alt="">
+    <img id="ailiplay" src="" alt="">
 </div>
 </body>
 
