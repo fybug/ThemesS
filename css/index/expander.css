@@ -1,0 +1,22 @@
+#see {
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#see > img {
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 10px rgba(255, 255, 255, 0) solid;
+    padding: 0;
+}

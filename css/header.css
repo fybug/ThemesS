@@ -1,12 +1,12 @@
 /* 页首 */
-body > .框架 > header {
+body > .frmwork > header {
     width: 100%;
     background: #6495ed;
     box-shadow: 0 0 25px #6495ED;
 }
 
 /* 标题栏文字 */
-.首尾 > h2 {
+.headAndFoot > h2 {
     color: #fff;
     text-shadow: 0 0 2px #fff;
 }

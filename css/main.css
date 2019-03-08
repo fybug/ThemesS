@@ -69,7 +69,7 @@ a:hover, a:active {
 }
 
 /* 外框架 */
-.框架 {
+.frmwork {
     box-sizing: border-box;
     float: left;
     width: 100%;
@@ -77,24 +77,26 @@ a:hover, a:active {
 }
 
 /* 展示的部分的框架 */
-.展示 {
+.showS {
     box-sizing: border-box;
     padding: 0 10px;
 }
 
-.展示 > * {
+/* 规定最大长度 */
+.showS > * {
     margin: auto;
-    max-width: 840px;
+    max-width: 600px;
 }
 
 /* 首尾样式 */
-.首尾 {
+.headAndFoot {
     box-sizing: border-box;
     padding: 10px 0;
     margin: auto;
     z-index: 50;
 }
 
+/* 左浮动 */
 .floaleft {
     float: left;
 }

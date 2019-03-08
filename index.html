@@ -8,20 +8,20 @@
 
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
 
-    <link href="css/pc/main.css" rel="stylesheet"/>
-    <link href="css/pc/foot.css" rel="stylesheet"/>
-    <link href="css/pc/header.css" rel="stylesheet"/>
-    <link href="css/index/pc/body.css" rel="stylesheet">
-    <link href="css/index/pc/expander.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/foot.css" rel="stylesheet"/>
+    <link href="css/header.css" rel="stylesheet"/>
+    <link href="css/index/body.css" rel="stylesheet">
+    <link href="css/index/expander.css" rel="stylesheet">
 
 </head>
 <body>
 <!-- 页首 -->
-<div class="框架">
-    <header class="首尾"><h2>fybug 主题站</h2></header>
+<div class="frmwork">
+    <header class="headAndFoot"><h2>fybug 主题站</h2></header>
 </div>
 <!-- 内容 -->
-<div class="展示">
+<div class="showS">
     <section>
         <button id="help" onclick="window.open('help.html');">主题如何使用
         </button>
@@ -39,14 +39,13 @@
                          src="static/img/yunos/400c87ad32e51e67-187664-o_1cee7gpksmjfj5o4rndtd7s52i-uid-1692548@540x540.png"
                          alt=""/>
                 </a>
-                <h1 class="主题介绍">原OS
+                <h1 class="TtileAlt">原OS
                     <small>EMUI8.0及以下</small>
                     <button value="static/huawei/yuanOS.hwt">下载</button>
                 </h1>
             </section>
             <!-- 图片展示 -->
             <div>
-                <!-- todo 准备预览 -->
                 <img src="static/img/yunos/1.png" alt=""/>
                 <img src="static/img/yunos/2.png" alt=""/>
                 <img src="static/img/yunos/3.png" alt=""/>
@@ -67,16 +66,17 @@
         <!-- T O D O -->
         <div id="todo">
             <h2>预计增加功能:</h2>
-            <p>增加效果图点击预览功能</p>
+            <p>增加导航栏</p>
             <p>增加作者捐献功能</p>
             <p>往站长头像上加点东西...</p>
+            <p>增加站长捐献</p>
         </div>
     </section>
 </div>
 <!-- 页尾 -->
-<div class="框架">
-    <div class="展示 foot">
-        <footer class="首尾">
+<div class="frmwork">
+    <div class="showS foot">
+        <footer class="headAndFoot">
             <a href="">
                 <img class="icon copyrihjyicon"
                      src="static/img/fybug.png">
@@ -86,11 +86,15 @@
         </footer>
     </div>
 </div>
+<!-- todo 准备点击效果 -->
+<div id="see">
+    <img src="" alt=""/>
+</div>
 </body>
 
-<script src="js/foot.js"></script>
+<script src="js/index.js"></script>
 <script>
-    $(".主题介绍 button").click(function () {
+    $(".TtileAlt button").click(function () {
         window.open(this.value);
     });
 </script>

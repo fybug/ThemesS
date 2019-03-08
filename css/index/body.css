@@ -1,5 +1,5 @@
 /* 内容区 */
-body > .展示 section {
+body > .showS section {
     box-sizing: border-box;
     clear: both;
     background: #fff;
@@ -40,7 +40,7 @@ body > .展示 section {
 }
 
 /* 主题介绍 */
-.主题介绍 {
+.TtileAlt {
     box-sizing: border-box;
     font-size: 15pt;
     color: #3e3e3e;
@@ -91,4 +91,58 @@ body > .展示 section {
 /* 作者图标动画 */
 .conins > .aouter img:hover {
     box-shadow: 0 0 15px #000;
+}
+
+/* 帮助按钮 */
+#help {
+    text-shadow: 0 0 2px #fff;
+    font-size: 15pt;
+    width: 100%;
+    color: #fff;
+    clear: both;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    background: #3141b4;
+    border-radius: 5px;
+}
+
+/* 介绍 */
+#redme {
+    background: #6983ff;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 10pt;
+    font-weight: bolder;
+    color: #000;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+/* 介绍动画 */
+#redme:hover {
+    border-radius: 30px;
+}
+
+/* 预计增加内容 */
+#todo {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(61, 61, 61, 0.72);
+}
+
+#todo > h2 {
+    font-weight: bold;
+    margin: 10px 0 10px 40px;
+    color: #D50005;
+}
+
+#todo > p {
+    background: #222222;
+    padding: 5px 0 10px 40px;
+    color: springgreen;
 }
