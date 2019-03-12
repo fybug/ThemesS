@@ -1,131 +1,25 @@
-/* 内容区 */
-body > .showS section {
-    box-sizing: border-box;
-    clear: both;
-    background: #fff;
-    padding-top: 15px;
-}
-
-/* 一格文章 */
-.conins {
-    padding: 20px 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #737373;
-}
-
-/* 样式展示 */
-.conins > div {
-    height: 300px;
-    width: auto;
-    clear: both;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-/* 展示的图片 */
-.conins > div > img {
-    display: inline-block;
-    box-sizing: border-box;
-    height: 98%;
-    margin: 0 5px;
-}
-
-/* 标题栏 */
-.conins > .icons {
-    padding-top: 0;
-    width: 100%;
-    height: 55px;
-    text-align: left;
-}
-
-/* 主题介绍 */
-.TtileAlt {
-    box-sizing: border-box;
-    font-size: 15pt;
-    color: #3e3e3e;
-    margin: 0;
-    padding: 10px 0 0;
-    height: 100%;
-}
-
-/* 副主题 */
-.conins > .icons > h1 small {
-    font-size: small;
-    color: #455cff;
-}
-
-/* 按钮 */
-.downbutton {
-    box-sizing: border-box;
-    font-family: 微软雅黑, arial;
-    padding: 10px 35px;
-    color: #fff;
-    font-size: 15px;
-    margin: 0 5px 0 0;
-    float: right;
-    background: #455cff;
-    border-radius: 20px;
-    box-shadow: 0 0 5px #455cff;
-    transition: .5s;
-}
-
-/* 下载按钮动画 */
-.downbutton:hover {
-    box-shadow: 0 0 15px #3141b4;
-}
-
-/* 下载按钮 */
-.conins > .icons > h1 button {
-    margin-top: -5px;
-}
-
-/* 作者 */
-.conins > .aouter {
-    padding-top: 0;
-    clear: both;
-    width: 100%;
-    height: 80px;
-}
-
-/* 作者图标 */
-.conins > .aouter img {
-    transition: 1s;
-}
-
-/* 作者图标动画 */
-.conins > .aouter img:hover {
-    box-shadow: 0 0 15px #000;
-}
-
-/* 捐献按钮 */
-.conins > .aouter button {
-    margin-top: 30px;
-}
-
 /* 帮助按钮 */
 #help {
+    display: inline-block;
+    width: 100%;
     text-shadow: 0 0 2px #fff;
     font-size: 15pt;
-    width: 100%;
     color: #fff;
-    clear: both;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 15px;
-    padding: 10px 0;
     background: #3141b4;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px 0;
 }
 
 /* 介绍 */
 #redme {
+    color: #000;
     background: #6983ff;
-    margin-bottom: 15px;
+    margin-top: 10px;
     padding: 10px;
     font-size: 10pt;
     font-weight: bolder;
-    color: #000;
     border-radius: 10px;
     transition: .5s;
 }
@@ -135,7 +29,105 @@ body > .showS section {
     border-radius: 30px;
 }
 
-/* 预计增加内容 */
+/* 主题内容区 */
+body .ThemeSource {
+    position: relative;
+    padding: 0 20px;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #737373;
+}
+
+/* 主题介绍区 */
+.ThemeSource .icons {
+    display: inline-block;
+    margin-top: 12px;
+    width: 100%;
+    height: 55px;
+    text-align: left;
+}
+
+/* 主题图标微调 */
+.icons .icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+/* 主题介绍 */
+.TtileAlt {
+    display: inline;
+    height: 100%;
+    margin: 0;
+    color: #3e3e3e;
+    font-size: 15pt;
+}
+
+/* 副主题 */
+.ThemeSource > .icons small {
+    font-weight: bold;
+    font-size: small;
+    color: #455cff;
+}
+
+/* 主题展示内部的按钮 */
+.ThemeSource .buttons {
+    position: absolute;
+    right: 0;
+    margin: 0 10px 0 0;
+}
+
+/* 主题预览 */
+.ThemeSource > div {
+    height: 280px;
+    padding: 0;
+    margin: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* 展示的图片 */
+.ThemeSource > div > img {
+    display: inline-block;
+    height: 100%;
+    margin: 0 5px;
+}
+
+/* 作者 */
+.ThemeSource .aouter {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 75px;
+    text-align: left;
+}
+
+/* 作者头像 */
+.ThemeSource .aouter .icon {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+/* 作者名称 */
+.ThemeSource .aouter h1 {
+    display: inline-block;
+    color: #fff;
+    text-shadow: 1px 1px 5px #383838;
+}
+
+/* 捐献按钮微调 */
+.ThemeSource .aouter button {
+    margin-top: 15px;
+}
+
+/* 网站预计变动 */
 #todo {
     margin-top: 20px;
     background: #fff;
@@ -152,6 +144,7 @@ body > .showS section {
     color: #D50005;
 }
 
+/* t o d o 内容 */
 #todo > p {
     background: #222222;
     padding: 5px 0 10px 40px;

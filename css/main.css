@@ -1,4 +1,6 @@
 * {
+    clear: both;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -36,6 +38,10 @@ input {
     outline: none;
     border: none;
     box-shadow: none;
+}
+
+h1 {
+    font-size: 22px;
 }
 
 h3 {
@@ -82,7 +88,6 @@ a:hover, a:active {
 
 /* 展示的部分的框架 */
 .showS {
-    box-sizing: border-box;
     padding: 0 10px;
 }
 
@@ -94,7 +99,6 @@ a:hover, a:active {
 
 /* 首尾样式 */
 .headAndFoot {
-    box-sizing: border-box;
     padding: 10px 0;
     margin: auto;
     z-index: 50;
@@ -105,15 +109,32 @@ a:hover, a:active {
     float: left;
 }
 
-/* 图标 */
-.icon {
-    height: 90%;
-    margin: 0 1.5%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #9f9f9f;
+/* 按钮样式 */
+.buttons {
+    box-shadow: 0 0 5px #455cff;
+    background: #455cff;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 35px;
+    transition: .5s;
+    border-radius: 4px;
 }
 
-/* 上部缩进 */
-.topma {
-    margin-top: 10px;
+/* 按钮动画 */
+.buttons:hover {
+    box-shadow: 0 0 15px #3141b4;
+}
+
+/* 图标 */
+.icon {
+    float: top;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 0 10px #9f9f9f;
+    transition: 1s;
+}
+
+/* 图标动画 */
+.icon:hover {
+    box-shadow: 0 0 10px #282828;
 }

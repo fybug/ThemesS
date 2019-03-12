@@ -1,15 +1,14 @@
 /* 页尾 */
-body > .frmwork footer {
+footer {
     color: #fff;
     background: #455cff;
-    box-sizing: revert;
+    /*box-sizing: revert;*/
     box-shadow: 0 0 10px #6983ff;
     border-radius: 8px;
 }
 
 /* 脚部边距 */
-body .foot {
-    display: block;
+.foot {
     margin-top: 20px;
     padding-bottom: 20px;
 }
