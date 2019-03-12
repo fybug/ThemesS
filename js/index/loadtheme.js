@@ -95,12 +95,13 @@ function getThemes(data) {
     tmp.children('a').children('.icon')[0].src = iconfield + data.icon;
     // 设置主题名称
     tmp.children('.TtileAlt').text(data.name);
+    tmp.children('.TtileAlt').attr('title', data.name);
     // 设置主题版本支持
     tmp.children('small').text(data.Version);
     // 设置主题下载路径
     tmp.children('.buttons').val(doownfield + data.file);
     // 预览图片生成
-    tmp = $(".ThemeSource div");
+    tmp = themesnojs.children("div");
     getIMG(data.toimgs, tmp);
     // 获取作者信息节点
     tmp = $('.ThemeSource .aouter');
@@ -115,7 +116,11 @@ function getThemes(data) {
 
 function load() {
     let soure = $('.ThemeSource'); // 源节点
-    for (let i = 0; i < themes.length; i++)
+    let le = themes.length;
+    for (let i = 0; i < le; i++)
         getThemes(themes[i]);
+    /* 最后一个元素不是双数 */
+    if (le % 2 !== 0)
+        $(".showS>section>.ThemeSource:last-child")[0].id = "full";
     $(soure[0]).remove();
 }

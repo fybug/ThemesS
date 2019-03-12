@@ -31,21 +31,27 @@
 
 /* 主题内容区 */
 body .ThemeSource {
-    position: relative;
-    padding: 0 20px;
-    margin-top: 15px;
+    padding: 0 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px #737373;
+    /*padding: 0 20px;*/
+    /*margin-top: 15px;*/
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px #737373;
+    /*box-shadow: 0 0 20px #737373;*/
 }
 
 /* 主题介绍区 */
 .ThemeSource .icons {
+    margin-top: 10px;
+    height: auto;
+    text-align: center;
+    position: relative;
     display: inline-block;
-    margin-top: 12px;
+    /*margin-top: 12px;*/
     width: 100%;
-    height: 55px;
-    text-align: left;
+    /*height: 55px;*/
+    /*text-align: left;*/
 }
 
 /* 主题图标微调 */
@@ -58,15 +64,20 @@ body .ThemeSource {
 
 /* 主题介绍 */
 .TtileAlt {
-    display: inline;
-    height: 100%;
+    display: block;
+    height: auto;
+    width: 100%;
+    font-size: 15pt;
+    /*display: inline;*/
+    /*height: 100%;*/
     margin: 0;
     color: #3e3e3e;
-    font-size: 15pt;
 }
 
 /* 副主题 */
 .ThemeSource > .icons small {
+    display: block;
+    margin: 5px 0;
     font-weight: bold;
     font-size: small;
     color: #455cff;
@@ -76,12 +87,17 @@ body .ThemeSource {
 .ThemeSource .buttons {
     position: absolute;
     right: 0;
-    margin: 0 10px 0 0;
+    font-size: 10px;
+    top: 0;
+    padding: 10px 15px;
+    margin: 0 5px 0 0;
+    /*margin: 0 0 0 0;*/
 }
 
 /* 主题预览 */
 .ThemeSource > div {
-    height: 280px;
+    height: 150px;
+    /*height: 280px;*/
     padding: 0;
     margin: 0;
     overflow-x: scroll;
@@ -98,38 +114,50 @@ body .ThemeSource {
 
 /* 作者 */
 .ThemeSource .aouter {
+    position: relative;
     display: inline-block;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 12px;
     width: 100%;
-    height: 75px;
-    text-align: left;
+    /*height: 75px;*/
+    /*text-align: left;*/
+    margin-top: 5px;
+    text-align: center;
+    height: auto;
 }
 
 /* 作者头像 */
 .ThemeSource .aouter .icon {
     display: inline-block;
-    height: 75px;
-    width: 75px;
-    margin-bottom: 5px;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 0;
+    /*height: 75px;*/
+    /*width: 75px;*/
+    /*margin-bottom: 5px;*/
     margin-left: 0;
 }
 
 /* 作者名称 */
 .ThemeSource .aouter h1 {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: block;
+    margin-top: 5px;
     color: #fff;
     text-shadow: 1px 1px 5px #383838;
 }
 
 /* 捐献按钮微调 */
 .ThemeSource .aouter button {
-    margin-top: 15px;
+    margin-top: 10px;
+    /*margin-top: 15px;*/
 }
 
 /* 网站预计变动 */
 #todo {
-    margin-top: 20px;
+    z-index: 20;
+    position: relative;
+    top: 15px;
     background: #fff;
     border-radius: 5px;
     padding: 10px 0;
@@ -149,4 +177,224 @@ body .ThemeSource {
     background: #222222;
     padding: 5px 0 10px 40px;
     color: springgreen;
+}
+
+/* Moblie M */
+@media screen and (min-width: 375px) and (max-width: 399px) {
+    /* 主题介绍 */
+    .TtileAlt {
+        font-size: 16pt;
+    }
+
+    /* 主题图标微调 */
+    .icons .icon {
+        height: 55px;
+        width: 55px;
+    }
+
+    /* 主题展示内部的按钮 */
+    .ThemeSource .buttons {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    /* 主题预览 */
+    .ThemeSource > div {
+        height: 175px;
+    }
+
+    /* 作者头像 */
+    .ThemeSource .aouter .icon {
+        height: 75px;
+        width: 75px;
+    }
+
+    /* 捐献按钮微调 */
+    .ThemeSource .aouter button {
+        margin-top: 15px;
+    }
+
+    /* 网站预计变动 */
+    #todo {
+        top: 17px;
+    }
+}
+
+/* Moblie L */
+@media screen and (min-width: 400px) {
+    /* 主题内容区 */
+    body .ThemeSource {
+        padding: 0 15px;
+        margin-top: 15px;
+        box-shadow: 0 0 20px #737373;
+    }
+
+    /* 主题介绍区 */
+    .ThemeSource .icons {
+        position: relative;
+        height: 55px;
+        text-align: left;
+    }
+
+    /* 主题图标微调 */
+    .icons .icon {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 5px;
+    }
+
+    /* 主题介绍 */
+    .TtileAlt {
+        display: inline-block;
+        width: auto;
+        margin: -5px 0 -5px 5px;
+        max-width: 35%;
+    }
+
+    /* 副主题 */
+    .ThemeSource > .icons small {
+        display: inline-block;
+        margin: -5px 0;
+        width: 28%;
+    }
+
+    /* 主题展示内部的按钮 */
+    .ThemeSource .buttons {
+        font-size: 10pt;
+        padding: 10px 20px;
+        margin: 5px 0 0 0;
+    }
+
+    /* 主题预览 */
+    .ThemeSource > div {
+        height: 190px;
+    }
+
+    /* 作者 */
+    .ThemeSource .aouter {
+        margin-top: 10px;
+        height: 70px;
+        text-align: left;
+    }
+
+    /* 作者头像 */
+    .ThemeSource .aouter .icon {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 5px;
+    }
+
+    /* 作者名称 */
+    .ThemeSource .aouter h1 {
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: -10px;
+        width: auto;
+        max-width: 59%;
+    }
+
+    /* 捐献按钮微调 */
+    .ThemeSource .aouter button {
+        margin-top: 15px;
+    }
+
+    /* 网站预计变动 */
+    #todo {
+        top: 20px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    /* 主题内容区 */
+    body .ThemeSource {
+        clear: none;
+        width: 49%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    body > .showS > section > #full {
+        width: 99%;
+    }
+
+    /* 主题介绍区 */
+    .ThemeSource .icons {
+        height: 45px;
+    }
+
+    /* 主题图标微调 */
+    .icons .icon {
+        height: 45px;
+        width: 45px;
+        margin: 0 2px 5px 0;
+    }
+
+    /* 主题介绍 */
+    .TtileAlt {
+        font-size: 11pt;
+        width: auto;
+        max-width: 33%;
+        color: #3e3e3e;
+        margin: 0 0 -5px;
+        display: inline-block;
+    }
+
+    body > .showS > section > #full .TtileAlt {
+        max-width: 60%;
+    }
+
+    body > .showS > section > #full small {
+        width: auto;
+        max-width: 21%;
+    }
+
+    /* 副主题 */
+    .ThemeSource > .icons small {
+        font-weight: bold;
+        font-size: 5pt;
+        color: #455cff;
+    }
+
+    body .ThemeSource:nth-child(n) {
+        margin-right: 0.5%;
+    }
+
+    body .ThemeSource:nth-child(2n) {
+        margin-left: 1%;
+    }
+
+    /* 作者名称 */
+    .ThemeSource .aouter h1 {
+        max-width: 51%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    /* 主题介绍区 */
+    .ThemeSource .icons {
+        height: 50px;
+    }
+
+    /* 主题图标微调 */
+    .icons .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* 主题介绍 */
+    .TtileAlt {
+        font-size: 12pt;
+    }
+
+    /* 副主题 */
+    .ThemeSource > .icons small {
+        font-weight: bold;
+        font-size: 10pt;
+        color: #455cff;
+    }
+
+    /* 作者名称 */
+    .ThemeSource .aouter h1 {
+        max-width: 60%;
+    }
 }

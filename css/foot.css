@@ -2,21 +2,25 @@
 footer {
     color: #fff;
     background: #455cff;
-    /*box-sizing: revert;*/
     box-shadow: 0 0 10px #6983ff;
     border-radius: 8px;
 }
 
 /* 脚部边距 */
 .foot {
-    margin-top: 20px;
-    padding-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    top: 25px;
+    padding-bottom: 15px;
+    /*top: 45px;*/
+    /*padding-bottom: 20px;*/
 }
 
 /* 站长图标 */
 .copyrihjyicon {
+    height: 40px;
     box-shadow: 0 0 5px #fff;
-    height: 50px;
+    /*height: 50px;*/
     padding: 0;
     margin: 0 0 10px 0;
     transition: 1s;
@@ -25,4 +29,30 @@ footer {
 /* 站长图标动画 */
 .copyrihjyicon:hover {
     box-shadow: 0 0 20px #fff;
+}
+
+/* Moblie M */
+@media screen and  (min-width: 375px) and (max-width: 424px) {
+    /* 脚部边距 */
+    .foot {
+        top: 35px;
+    }
+
+    /* 站长图标 */
+    .copyrihjyicon {
+        height: 45px;
+    }
+}
+
+/* Moblie L */
+@media screen and (min-width: 425px) {
+    /* 脚部边距 */
+    .foot {
+        top: 40px;
+    }
+
+    /* 站长图标 */
+    .copyrihjyicon {
+        height: 47px;
+    }
 }

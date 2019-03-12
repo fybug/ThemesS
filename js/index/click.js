@@ -24,5 +24,4 @@ function showIMG(src) {
 /** 隐藏展示区域 */
 function hideIMG() {
     $("#see").addClass('hidenow');
-    $("#see").children("#screen").img.css("background-image", "");
 }
