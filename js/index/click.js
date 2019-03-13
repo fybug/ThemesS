@@ -1,6 +1,7 @@
 $(".frmwork>.foot>.headAndFoot>a").click(function () {
-    alert('还没想好放什么')
+    alert('啊♂♂')
 });
+
 // 设置捐献按钮
 $(".showS>section>.ThemeSource>.aouter>.buttons").click(function () {
     hideIMG();
@@ -8,12 +9,33 @@ $(".showS>section>.ThemeSource>.aouter>.buttons").click(function () {
 
     let self = $(this);
     let aout = self.parent().children('h1').text(); // 作者
+    let has= false;
+    let bu=null;
 
     if (self.attr('qq')) {
-        // todo
+        has=true;
+        bu=$('#don #qq');
+        bu.removeClass('hidenow');
+        bu.attr('val',aout+'-qq');
     }
-
-    shouSEE();
+    if(self.attr('wechat')){
+        has=true;
+        bu=$('#don #wechat');
+        bu.removeClass('hidenow');
+        bu.attr('val',aout+'-wechat');
+    }
+    if(self.attr('aili')){
+        has=true;
+        bu=$('#don #mayun');
+        bu.removeClass('hidenow');
+        bu.attr('val',aout+'-aili');
+    }
+    if(has)
+        shouSEE();
+    else{
+    hideIMG();
+    alert("该作者没有上传捐献码......");
+    }
 });
 
 // 点击展示图片
@@ -45,5 +67,5 @@ function showIMG(src) {
 /** 隐藏展示区域 */
 function hideIMG() {
     $("#see").addClass('hidenow');
-    $('#see').children('*').attr('style', '');
+    $('#see').children('*').attr({'style': '',"val":''});
 }
