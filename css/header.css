@@ -10,3 +10,96 @@ header > h2 {
     color: #fff;
     text-shadow: 0 0 2px #fff;
 }
+
+/* 导航菜单通用样式 */
+.nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 20px 0;
+    text-align: center;
+}
+
+/* 导航内容宽度 */
+#navigation, #navig, #navig > i {
+    width: 50px;
+}
+
+/* 导航内容高度 */
+#navigation, #navig > i, #navs > a {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* 导航外观 */
+#navigation, #navig > i {
+    background: #ffef04;
+    box-shadow: 0 0 20px rgba(19, 15, 7, 0.63);
+}
+
+/* 主导航按钮 */
+#navigation {
+    z-index: 2;
+    border-radius: 50%;
+}
+
+/* 主导航按钮 */
+#navigation:after {
+    content: "";
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    width: 20px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(75, 75, 75, 0.64);
+}
+
+/* 主导航按钮 */
+#navigation:before {
+    content: "";
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    width: 3px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(75, 75, 75, 0.64);
+}
+
+/* 导航图标区 */
+#navig {
+    padding-bottom: 50px;
+}
+
+/* 导航图标 */
+#navig > i {
+    border-radius: 50%;
+}
+
+/* 导航文字区 */
+#navs {
+    margin-bottom: 70px;
+    margin-right: 70px;
+    text-align: left;
+}
+
+/* 导航文字 */
+#navs > a {
+    margin-right: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.81);
+}
+
+/* 导航文字及图标样式 */
+#navs > *, #navig > * {
+    display: block;
+    width: auto;
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+    text-align: center;
+}

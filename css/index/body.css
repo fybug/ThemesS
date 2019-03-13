@@ -8,35 +8,35 @@
 /* 帮助按钮 */
 #help {
     display: inline-block;
-    width: 100%;
-    text-shadow: 0 0 2px #fff;
-    font-size: 15pt;
-    color: #fff;
-    background: #3141b4;
-    border-radius: 5px;
+    padding: 10px 0;
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 10px 0;
+    width: 100%;
+    background: #3141b4;
+    color: #fff;
+    font-size: 15pt;
+    text-shadow: 0 0 2px #fff;
+    border-radius: 5px;
 }
 
 /* 主题内容区 */
 body .ThemeSource {
     padding: 0 5px;
     margin-top: 10px;
-    box-shadow: 0 0 15px #737373;
     background: #fff;
+    box-shadow: 0 0 15px #737373;
     border-radius: 10px;
     animation: themesload 1s;
 }
 
 /* 主题介绍区 */
 .ThemeSource .icons {
-    margin-top: 10px;
-    height: auto;
-    text-align: center;
     position: relative;
     display: inline-block;
+    text-align: center;
+    margin-top: 10px;
     width: 100%;
+    height: auto;
 }
 
 /* 主题图标微调 */
@@ -52,9 +52,9 @@ body .ThemeSource {
     display: block;
     height: auto;
     width: 100%;
-    font-size: 15pt;
     margin: 0;
     color: #3e3e3e;
+    font-size: 15pt;
 }
 
 /* 副主题 */
@@ -70,24 +70,25 @@ body .ThemeSource {
 .ThemeSource .buttons {
     position: absolute;
     right: 0;
-    font-size: 10px;
     top: 0;
     padding: 10px 15px;
     margin: 0 5px 0 0;
+    font-size: 10px;
 }
 
 /* 主题预览 */
 .ThemeSource > div {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
     height: 150px;
     padding: 0;
     margin: 0;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
 }
 
 /* 展示的图片 */
 .ThemeSource > div > img {
+    cursor: zoom-in;
     display: inline-block;
     height: 100%;
     margin: 0 5px;
@@ -97,10 +98,10 @@ body .ThemeSource {
 .ThemeSource .aouter {
     position: relative;
     display: inline-block;
-    margin-bottom: 12px;
-    width: 100%;
-    margin-top: 5px;
     text-align: center;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    width: 100%;
     height: auto;
 }
 
@@ -116,9 +117,9 @@ body .ThemeSource {
 /* 作者名称 */
 .ThemeSource .aouter h1 {
     display: block;
-    margin-top: 5px;
-    color: #fff;
     text-shadow: 1px 1px 5px #383838;
+    color: #fff;
+    margin-top: 5px;
 }
 
 /* 捐献按钮微调 */
@@ -128,14 +129,13 @@ body .ThemeSource {
 
 /* 网站预计变动 */
 #todo {
-    z-index: 20;
     position: relative;
     top: 15px;
+    text-align: left;
     background: #fff;
     border-radius: 5px;
-    padding: 10px 0;
-    text-align: left;
     box-shadow: 0 0 10px rgba(61, 61, 61, 0.72);
+    padding: 10px 0;
 }
 
 /* t o d o 标题 */
@@ -205,8 +205,8 @@ body .ThemeSource {
     /* 主题介绍区 */
     .ThemeSource .icons {
         position: relative;
-        height: 55px;
         text-align: left;
+        height: 55px;
     }
 
     /* 主题图标微调 */
@@ -219,8 +219,8 @@ body .ThemeSource {
     /* 主题介绍 */
     .TtileAlt {
         display: inline-block;
-        width: auto;
         margin: -5px 0 -5px 5px;
+        width: auto;
         max-width: 35%;
     }
 
@@ -281,14 +281,19 @@ body .ThemeSource {
     /* 主题内容区 */
     body .ThemeSource {
         clear: none;
-        width: 49%;
         float: left;
+        width: 49%;
         padding: 0 10px;
     }
 
     /* 孤独元素 */
     body > .showS > section > #full {
         width: 99%;
+    }
+
+    /* 孤独元素预览图 */
+    #full div {
+        height: 200px;
     }
 
     /* 主题介绍区 */
@@ -305,12 +310,12 @@ body .ThemeSource {
 
     /* 主题介绍 */
     .TtileAlt {
-        font-size: 14pt;
+        display: inline-block;
+        margin: 0 0 -5px;
         width: auto;
         max-width: 33%;
         color: #3e3e3e;
-        margin: 0 0 -5px;
-        display: inline-block;
+        font-size: 14pt;
     }
 
     /* 孤独元素介绍 */
@@ -351,6 +356,11 @@ body .ThemeSource {
     /* 主题介绍区 */
     .ThemeSource .icons {
         height: 50px;
+    }
+
+    /* 孤独元素预览区 */
+    #full div {
+        height: 220px;
     }
 
     /* 主题图标微调 */

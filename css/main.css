@@ -1,6 +1,7 @@
 * {
-    clear: both;
+    z-index: 0;
     box-sizing: border-box;
+    clear: both;
     padding: 0;
     margin: 0;
 }
@@ -22,12 +23,11 @@ img, input {
 
 body {
     position: relative;
-    font-family: 微软雅黑, arial;
-    font-size: 10px;
-    /*font-size: 12px;*/
-    text-align: center;
     background: #FFF;
     color: #000;
+    font-family: 微软雅黑, arial;
+    font-size: 10px;
+    text-align: center;
 }
 
 html {
@@ -43,8 +43,8 @@ th, td, input {
 }
 
 input {
-    outline: none;
     border: none;
+    outline: none;
     box-shadow: none;
 }
 
@@ -57,17 +57,17 @@ h3 {
 }
 
 button {
+    cursor: none;
     border: none;
-    cursor: pointer;
-    font-size: 12px;
-    background-color: transparent;
     outline: none;
+    background-color: transparent;
+    font-size: 12px;
 }
 
 select {
-    border-width: 1px;
     _zoom: 1;
     border-style: solid;
+    border-width: 1px;
     padding-top: 2px;
     font-size: 12px;
 }
@@ -89,10 +89,9 @@ a:hover, a:active {
 
 /* 外框架 */
 .frmwork {
-    box-sizing: border-box;
     float: left;
+    box-sizing: border-box;
     width: 100%;
-    z-index: 49;
 }
 
 /* 展示的部分的框架 */
@@ -111,18 +110,17 @@ a:hover, a:active {
 .headAndFoot {
     padding: 10px 0;
     margin: auto;
-    z-index: 50;
 }
 
 /* 按钮样式 */
 .buttons {
-    box-shadow: 0 0 5px #455cff;
     background: #455cff;
     color: #fff;
     font-size: 15px;
     padding: 10px 35px;
-    transition: .5s;
+    box-shadow: 0 0 5px #455cff;
     border-radius: 4px;
+    transition: .5s;
 }
 
 /* 按钮动画 */
@@ -141,6 +139,10 @@ a:hover, a:active {
 /* 图标动画 */
 .icon:hover {
     box-shadow: 0 0 10px #282828;
+}
+/* 图标鼠标样式 */
+button .icon, a .icon {
+    cursor: alias;
 }
 
 /* Moblie M */
@@ -173,8 +175,8 @@ a:hover, a:active {
 @media screen and (min-width: 700px) {
     /* 规定最大长度 */
     .showS > * {
-        margin: auto;
         max-width: 880px;
+        margin: auto;
     }
 
     h1 {

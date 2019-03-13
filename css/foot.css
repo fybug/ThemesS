@@ -1,25 +1,24 @@
 /* 页尾 */
 footer {
-    color: #fff;
-    background: #455cff;
-    box-shadow: 0 0 10px #6983ff;
     border-radius: 8px;
+    box-shadow: 0 0 10px #6983ff;
+    background: #455cff;
+    color: #fff;
 }
 
 /* 脚部边距 */
 .foot {
-    z-index: 1;
     position: relative;
-    top: 25px;
     padding-bottom: 15px;
+    top: 25px;
 }
 
 /* 站长图标 */
 .copyrihjyicon {
-    height: 40px;
     box-shadow: 0 0 5px #fff;
-    padding: 0;
+    height: 40px;
     margin: 0 0 10px 0;
+    padding: 0;
     transition: 1s;
 }
 

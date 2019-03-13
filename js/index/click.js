@@ -49,6 +49,7 @@ $(".showS>section>.ThemeSource>div>img").click(function () {
 });
 // 展示区域点击隐藏
 $("#see").click(function () {
+    $('#see>#don').addClass('hidenow');
     hideIMG();
     return false;
 });

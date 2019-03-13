@@ -9,6 +9,22 @@ const themes = [{
     Version: "EMUI8.0及以下",
     file: '1.hwt',
     toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.jpg', '1-6.png', '1-7.png']
+}, {
+    aouts: 'Masuku',
+    icon: "1.png",
+    link: "https://www.coolapk.com/apk/com.yuanos.masuku",
+    name: "原OS",
+    Version: "EMUI8.0及以下",
+    file: '1.hwt',
+    toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.jpg', '1-6.png', '1-7.png']
+}, {
+    aouts: 'Masuku',
+    icon: "1.png",
+    link: "https://www.coolapk.com/apk/com.yuanos.masuku",
+    name: "原OS",
+    Version: "EMUI8.0及以下",
+    file: '1.hwt',
+    toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.jpg', '1-6.png', '1-7.png']
 }];
 /** 作者信息 */
 const themesaoutes = {
