@@ -15,7 +15,8 @@ const themesaoutes = {
     /** 作者数据存放区 */
     data: {
         'Masuku': {
-            link: "https://www.coolapk.com/apk/com.yuanos.masuku"
+            link: "https://www.coolapk.com/apk/com.yuanos.masuku",
+            qq: true, wechat: false, aili: false
         }
     },
     /** 绑定的数据
@@ -62,6 +63,18 @@ const themesaoutes = {
             return null;
         else
             return this.getaoutlink(this.bin[id][aouts]);
+    },
+    /** 获取是否有qq捐献码 */
+    donateQQ: function (name) {
+        return this.data[name].qq;
+    },
+    /** 获取是你否有微信捐献码 */
+    donateWeChat: function (name) {
+        return this.data[name].wechat;
+    },
+    /** 获取是否有支付宝捐献码 */
+    donateAili: function (name) {
+        return this.data[name].aili;
     }
 };
 /** 源节点 */
@@ -104,13 +117,21 @@ function getThemes(data) {
     tmp = themesnojs.children("div");
     getIMG(data.toimgs, tmp);
     // 获取作者信息节点
-    tmp = $('.ThemeSource .aouter');
+    tmp = themesnojs.children('.aouter');
     // 设置作者信息
     tmp = tmp.children('a');
     tmp.attr('href', themesaoutes.getaoutlink(data.aouts));
     tmp.children('.icon').attr({"src": themesaoutes.getaouticon(data.aouts), 'title': data.aouts});
-    tmp.parent().children('h1').text(data.aouts);
-    // todo 设置作者捐献信息
+    tmp = tmp.parent();
+    tmp.children('h1').text(data.aouts);
+    tmp = tmp.children('.buttons');
+    /** 设置是否有相关的捐献 */
+    if (themesaoutes.donateQQ(data.aouts))
+        tmp.attr('qq', true);
+    if (themesaoutes.donateWeChat(data.aouts))
+        tmp.attr('wechat', true);
+    if (themesaoutes.donateAili(data.aouts))
+        tmp.attr('aili', true);
     return themesnojs;
 }
 
