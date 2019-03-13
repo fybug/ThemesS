@@ -1,3 +1,10 @@
+/* 主题加载动画 */
+@keyframes themesload {
+    from {
+        transform: scaleX(0.9) scaleY(0.9);
+    }
+}
+
 /* 帮助按钮 */
 #help {
     display: inline-block;
@@ -12,33 +19,14 @@
     padding: 10px 0;
 }
 
-/* 介绍 */
-#redme {
-    color: #000;
-    background: #6983ff;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 10pt;
-    font-weight: bolder;
-    border-radius: 10px;
-    transition: .5s;
-}
-
-/* 介绍动画 */
-#redme:hover {
-    border-radius: 30px;
-}
-
 /* 主题内容区 */
 body .ThemeSource {
     padding: 0 5px;
     margin-top: 10px;
     box-shadow: 0 0 15px #737373;
-    /*padding: 0 20px;*/
-    /*margin-top: 15px;*/
     background: #fff;
     border-radius: 10px;
-    /*box-shadow: 0 0 20px #737373;*/
+    animation: themesload 1s;
 }
 
 /* 主题介绍区 */
@@ -48,10 +36,7 @@ body .ThemeSource {
     text-align: center;
     position: relative;
     display: inline-block;
-    /*margin-top: 12px;*/
     width: 100%;
-    /*height: 55px;*/
-    /*text-align: left;*/
 }
 
 /* 主题图标微调 */
@@ -68,8 +53,6 @@ body .ThemeSource {
     height: auto;
     width: 100%;
     font-size: 15pt;
-    /*display: inline;*/
-    /*height: 100%;*/
     margin: 0;
     color: #3e3e3e;
 }
@@ -91,13 +74,11 @@ body .ThemeSource {
     top: 0;
     padding: 10px 15px;
     margin: 0 5px 0 0;
-    /*margin: 0 0 0 0;*/
 }
 
 /* 主题预览 */
 .ThemeSource > div {
     height: 150px;
-    /*height: 280px;*/
     padding: 0;
     margin: 0;
     overflow-x: scroll;
@@ -116,11 +97,8 @@ body .ThemeSource {
 .ThemeSource .aouter {
     position: relative;
     display: inline-block;
-    /*margin-top: 10px;*/
     margin-bottom: 12px;
     width: 100%;
-    /*height: 75px;*/
-    /*text-align: left;*/
     margin-top: 5px;
     text-align: center;
     height: auto;
@@ -132,15 +110,11 @@ body .ThemeSource {
     height: 60px;
     width: 60px;
     margin-bottom: 0;
-    /*height: 75px;*/
-    /*width: 75px;*/
-    /*margin-bottom: 5px;*/
     margin-left: 0;
 }
 
 /* 作者名称 */
 .ThemeSource .aouter h1 {
-    /*display: inline-block;*/
     display: block;
     margin-top: 5px;
     color: #fff;
@@ -150,7 +124,6 @@ body .ThemeSource {
 /* 捐献按钮微调 */
 .ThemeSource .aouter button {
     margin-top: 10px;
-    /*margin-top: 15px;*/
 }
 
 /* 网站预计变动 */
@@ -313,6 +286,7 @@ body .ThemeSource {
         padding: 0 10px;
     }
 
+    /* 孤独元素 */
     body > .showS > section > #full {
         width: 99%;
     }
@@ -339,10 +313,12 @@ body .ThemeSource {
         display: inline-block;
     }
 
+    /* 孤独元素介绍 */
     body > .showS > section > #full .TtileAlt {
         max-width: 60%;
     }
 
+    /* 孤独元素版本支持 */
     body > .showS > section > #full small {
         width: auto;
         max-width: 21%;
@@ -355,10 +331,12 @@ body .ThemeSource {
         color: #455cff;
     }
 
+    /* 左间距 */
     body .ThemeSource:nth-child(n) {
         margin-right: 0.5%;
     }
 
+    /* 右间距 */
     body .ThemeSource:nth-child(2n) {
         margin-left: 1%;
     }

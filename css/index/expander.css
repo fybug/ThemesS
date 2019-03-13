@@ -18,7 +18,6 @@
 
 /* 图片展示区 */
 #see #screen {
-    visibility: hidden;
     z-index: -1;
     position: absolute;
     left: 0;
@@ -43,6 +42,7 @@
     margin: 5% 0 0;
 }
 
+/* 捐献按钮 */
 #see > #don .buttons {
     font-size: 12pt;
     width: 100px;
@@ -56,6 +56,7 @@
         width: 350px;
     }
 
+    /* 捐献按钮 */
     #see > #don .buttons {
         font-size: 15pt;
         width: 150px;

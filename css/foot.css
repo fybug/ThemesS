@@ -12,15 +12,12 @@ footer {
     position: relative;
     top: 25px;
     padding-bottom: 15px;
-    /*top: 45px;*/
-    /*padding-bottom: 20px;*/
 }
 
 /* 站长图标 */
 .copyrihjyicon {
     height: 40px;
     box-shadow: 0 0 5px #fff;
-    /*height: 50px;*/
     padding: 0;
     margin: 0 0 10px 0;
     transition: 1s;

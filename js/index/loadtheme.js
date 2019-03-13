@@ -86,9 +86,9 @@ const ThemesRoot = $('.ThemeSource').parent();
 function getIMG(imgs, ndne) {
     let img = ndne.children("img"); // 源节点
     /* 根据源节点生成图片 */
-    for (let i = 0, im = null; i < imgs.length; i++) {
+    for (let i = 0, im = null; i < imgs.length;) {
         im = img.clone(true);
-        im[0].src = toimgs + imgs[i];
+        im[0].src = toimgs + imgs[i++];
         ndne.append(im);
     }
     // 移出源节点
@@ -103,29 +103,25 @@ function getThemes(data) {
     // 主题介绍节点
     tmp = themesnojs.children(".icons");
     // 设置主题连接
-    tmp.children('a')[0].href = data.link;
+    tmp.children('a').attr('href', data.link)
     // 设置主题图标
-    tmp.children('a').children('.icon')[0].src = iconfield + data.icon;
+        .children('.icon').attr('src', iconfield + data.icon);
     // 设置主题名称
-    tmp.children('.TtileAlt').text(data.name);
-    tmp.children('.TtileAlt').attr('title', data.name);
+    tmp.children('.TtileAlt').text(data.name).attr('title', data.name);
     // 设置主题版本支持
     tmp.children('small').text(data.Version);
     // 设置主题下载路径
     tmp.children('.buttons').val(doownfield + data.file);
     // 预览图片生成
-    tmp = themesnojs.children("div");
-    getIMG(data.toimgs, tmp);
+    getIMG(data.toimgs, themesnojs.children("div"));
     // 获取作者信息节点
-    tmp = themesnojs.children('.aouter');
+    tmp = themesnojs.children('.aouter').children('a');
     // 设置作者信息
-    tmp = tmp.children('a');
     tmp.attr('href', themesaoutes.getaoutlink(data.aouts));
     tmp.children('.icon').attr({"src": themesaoutes.getaouticon(data.aouts), 'title': data.aouts});
-    tmp = tmp.parent();
-    tmp.children('h1').text(data.aouts);
-    tmp = tmp.children('.buttons');
+    tmp.parent().children('h1').text(data.aouts);
     /** 设置是否有相关的捐献 */
+    tmp = tmp.siblings('.buttons');
     if (themesaoutes.donateQQ(data.aouts))
         tmp.attr('qq', true);
     if (themesaoutes.donateWeChat(data.aouts))
@@ -137,11 +133,11 @@ function getThemes(data) {
 
 function load() {
     let soure = $('.ThemeSource'); // 源节点
-    let le = themes.length;
+    let le = themes.length; // 主题数量
     for (let i = 0; i < le; i++)
         getThemes(themes[i]);
     /* 最后一个元素不是双数 */
     if (le % 2 !== 0)
-        $(".showS>section>.ThemeSource:last-child")[0].id = "full";
-    $(soure[0]).remove();
+        $(".showS>section>.ThemeSource:last-child").attr('id', "full");
+    soure.remove();
 }

@@ -50,7 +50,6 @@ input {
 
 h1 {
     font-size: 20px;
-    /*font-size: 22px;*/
 }
 
 h3 {
@@ -83,6 +82,7 @@ a:hover, a:active {
     color: #f60;
 }
 
+/* 隐藏类 */
 .hidenow {
     visibility: hidden;
 }
@@ -112,11 +112,6 @@ a:hover, a:active {
     padding: 10px 0;
     margin: auto;
     z-index: 50;
-}
-
-/* 左浮动 */
-.floaleft {
-    float: left;
 }
 
 /* 按钮样式 */
