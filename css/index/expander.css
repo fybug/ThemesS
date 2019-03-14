@@ -1,6 +1,5 @@
 /* 悬浮框 */
 #see {
-    /*cursor: wait;*/
     z-index: 2;
     display: block;
     box-sizing: border-box;
