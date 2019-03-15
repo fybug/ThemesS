@@ -32,7 +32,6 @@ body .showS {
 }
 
 .showS[val="load"] #loadam:before {
-    /* todo 动画 */
     box-sizing: border-box;
     display: inline-block;
     position: relative;
