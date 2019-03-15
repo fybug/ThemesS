@@ -7,7 +7,7 @@
 
 @keyframes rotate {
     50% {
-        transform: rotate(90deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -33,13 +33,20 @@ body .showS {
 
 .showS[val="load"] #loadam:before {
     /* todo 动画 */
-    float: top;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background: #6983ff;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    text-align: center;
     content: "";
+    background: #000;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #fff #000;
     animation: rotate 2s infinite linear;
+    box-shadow: 0 0 10px #000;
 }
 
 /* 加载过程中的样式 */
