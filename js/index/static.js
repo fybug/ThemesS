@@ -16,23 +16,15 @@ const themes = [{
     name: "原OS",
     Version: "EMUI8.0及以下",
     file: '1.hwt',
-    toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.jpg', '1-6.png', '1-7.png']
+    toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.png', '1-6.png', '1-7.png']
 }, {
     aouts: 'Masuku',
-    icon: "1.png",
-    link: "https://www.coolapk.com/apk/com.yuanos.masuku",
-    name: "原OS",
-    Version: "EMUI8.0及以下",
-    file: '1.hwt',
-    toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.jpg', '1-6.png', '1-7.png']
-}, {
-    aouts: 'Masuku',
-    icon: "1.png",
-    link: "https://www.coolapk.com/apk/com.yuanos.masuku",
-    name: "原OS",
-    Version: "EMUI8.0及以下",
-    file: '1.hwt',
-    toimgs: ['1-1.png', '1-2.png', '1-3.png', '1-4.png', '1-5.jpg', '1-6.png', '1-7.png']
+    icon: "2.png",
+    link: "https://www.coolapk.com/apk/com.galaxy.masuku",
+    name: "银河",
+    Version: "EMUI5.1及以下",
+    file: '2.hwt',
+    toimgs: ['2-1.png', '2-2.png', '2-3.png', '2-4.png', '2-5.jpg', '2-6.png']
 }];
 /** 作者信息 */
 const themesaoutes = {
