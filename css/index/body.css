@@ -5,8 +5,46 @@
     }
 }
 
+@keyframes rotate {
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
+/* 总体框架 */
 body .showS {
     padding-top: 5px;
+}
+
+/* 内容区 */
+.showS > section {
+    position: relative;
+}
+
+/* 加载动画区 */
+.showS[val="load"] #loadam {
+    float: top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.showS[val="load"] #loadam:before {
+    /* todo 动画 */
+    float: top;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #6983ff;
+    content: "";
+    animation: rotate 2s infinite linear;
+}
+
+/* 加载过程中的样式 */
+.showS[val="load"] #themesbody, .showS[val=""] #loadam {
+    visibility: hidden;
 }
 
 /* 主题内容区 */
@@ -277,7 +315,7 @@ body .ThemeSource {
     }
 
     /* 孤独元素 */
-    body > .showS > section > #full {
+    body > .showS #full {
         width: 99%;
     }
 
@@ -309,12 +347,12 @@ body .ThemeSource {
     }
 
     /* 孤独元素介绍 */
-    body > .showS > section > #full .TtileAlt {
+    body > .showS #full .TtileAlt {
         max-width: 60%;
     }
 
     /* 孤独元素版本支持 */
-    body > .showS > section > #full small {
+    body > .showS #full small {
         width: auto;
         max-width: 21%;
     }

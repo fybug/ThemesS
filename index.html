@@ -37,41 +37,43 @@
 </div>
 
 <!-- 内容 -->
-<div class="showS">
-
-    <!-- 主题展示区 -->
+<div class="showS" val="load">
     <section>
-        <!-- 源节点 -->
-        <section class="ThemeSource">
-            <!-- 主题介绍 -->
-            <section class="icons">
-                <!-- 主题连接 -->
-                <a href="">
-                    <!-- 主题图标 -->
-                    <img class="icon tr-1" src="" alt=""/>
-                </a>
-                <!-- 标题 -->
-                <h1 class="TtileAlt"></h1>
-                <!-- 版本支持 -->
-                <small></small>
-                <!-- 下载按钮 -->
-                <button value="" class="buttons tr-05 " onclick="window.open(this.value)">下载
-                </button>
-            </section>
-            <!-- 图片展示 -->
-            <div>
-                <img src="" alt=""/>
-            </div>
-            <!-- 作者 -->
-            <section class="aouter">
-                <!-- 作者头像连接 -->
-                <a href="">
-                    <!-- 作者头像 -->
-                    <img title="" class="icon tr-1" src="" alt=""/>
-                </a>
-                <h1></h1>
-                <!-- 捐献按钮 -->
-                <button class="buttons tr-05 ">捐献</button>
+        <div id="loadam"></div>
+        <!-- 主题展示区 -->
+        <section id="themesbody">
+            <!-- 源节点 -->
+            <section class="ThemeSource">
+                <!-- 主题介绍 -->
+                <section class="icons">
+                    <!-- 主题连接 -->
+                    <a href="">
+                        <!-- 主题图标 -->
+                        <img class="icon tr-1" src="" alt=""/>
+                    </a>
+                    <!-- 标题 -->
+                    <h1 class="TtileAlt"></h1>
+                    <!-- 版本支持 -->
+                    <small></small>
+                    <!-- 下载按钮 -->
+                    <button value="" class="buttons tr-05 " onclick="window.open(this.value)">下载
+                    </button>
+                </section>
+                <!-- 图片展示 -->
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <!-- 作者 -->
+                <section class="aouter">
+                    <!-- 作者头像连接 -->
+                    <a href="">
+                        <!-- 作者头像 -->
+                        <img title="" class="icon tr-1" src="" alt=""/>
+                    </a>
+                    <h1></h1>
+                    <!-- 捐献按钮 -->
+                    <button class="buttons tr-05 ">捐献</button>
+                </section>
             </section>
         </section>
     </section>
@@ -121,7 +123,7 @@
 
 <script src="js/index/click.js"></script>
 <script src="js/index/static.js"></script>
-<script src="js/index/load.js"></script>
+<!--<script src="js/index/load.js"></script>-->
 <script src="js/head.js"></script>
 <script>
     $(".TtileAlt button").click(function () {

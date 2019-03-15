@@ -54,6 +54,7 @@ function load() {
         getThemes(themes[i]);
     /* 最后一个元素不是双数 */
     if (le % 2 !== 0)
-        $(".showS>section>.ThemeSource:last-child").attr('id', "full");
+        $(".showS .ThemeSource:last-child").attr('id', "full");
     soure.remove();
+    $(".showS").attr('val', '');
 }
