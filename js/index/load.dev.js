@@ -12,6 +12,18 @@ function getIMG(imgs, ndne) {
     img.remove();
 }
 
+function loadDev() {
+    let soure = $('.ThemeSource'); // 源节点
+    let le = themes.length; // 主题数量
+    for (let i = 0; i < le; i++)
+        getThemes(themes[i]);
+    /* 最后一个元素不是双数 */
+    if (le % 2 !== 0)
+        $(".showS .ThemeSource:last-child").attr('id', "full");
+    soure.remove();
+    $(".showS").attr('val', '');
+}
+
 /** 生成主题区域 */
 function getThemes(data) {
     let themesnojs = Themessoure.clone(true); // 节点
@@ -46,17 +58,6 @@ function getThemes(data) {
         tmp.attr('wechat', true);
     if (themesaoutes.donateAili(data.aouts))
         tmp.attr('aili', true);
-    return themesnojs;
-}
 
-function loadDev() {
-    let soure = $('.ThemeSource'); // 源节点
-    let le = themes.length; // 主题数量
-    for (let i = 0; i < le; i++)
-        getThemes(themes[i]);
-    /* 最后一个元素不是双数 */
-    if (le % 2 !== 0)
-        $(".showS .ThemeSource:last-child").attr('id', "full");
-    soure.remove();
-    $(".showS").attr('val', '');
+    return themesnojs;
 }
