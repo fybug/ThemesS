@@ -1,9 +1,1 @@
-body > div > h1 {
-    display: block;
-    margin-top: 35px;
-}
-
-h1 {
-    font-size: 38px;
-    border-radius: 10px;
-}
+body>div>h1{display:block;margin-top:35px}h1{font-size:38px;border-radius:10px}
