@@ -1,0 +1,162 @@
+/* 页首 */
+header {
+    width: 100%;
+    background: #3e54e2;
+    box-shadow: 0 0 10px #3e54e2;
+}
+
+/* 标题栏文字 */
+header > h2 {
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
+}
+
+/* 导航菜单通用样式 */
+.nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 20px 0;
+    text-align: center;
+}
+
+/* 导航内容宽度 */
+#navigation, #navig, #navig > i {
+    width: 50px;
+}
+
+/* 导航内容高度 */
+#navigation, #navig > i, #navs > a {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* 导航外观 */
+#navigation, #navig > i {
+    background: #ffef04;
+    box-shadow: 0 0 20px rgba(113, 113, 113, 0.69);
+}
+
+/* 主导航按钮 */
+#navigation {
+    z-index: 2;
+    border-radius: 50%;
+}
+
+/* 主导航按钮 */
+#navigation:after {
+    content: "";
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 24px;
+    left: 26px;
+    width: 8px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 2px 0 10px rgba(75, 75, 75, 0.56),
+    -10px 0 0 0 #fff,
+    -12px 0 10px rgba(75, 75, 75, 0.56);
+}
+
+/* 主导航按钮 */
+#navigation:before {
+    content: "";
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    width: 3px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(75, 75, 75, 0.6);
+}
+
+/* 主导航鼠标动画 */
+#navigation:hover {
+    box-shadow: 0 0 40px rgba(113, 113, 113, 0.69);
+}
+
+/* 主导航点击效果 */
+#navigation[in="get"][sold=""] {
+    background: #6983ff;
+    transform: rotate(360deg);
+    box-shadow: 0 0 40px rgba(113, 113, 113, 0.69);
+}
+
+/* 导航按下效果 */
+#navigation[in="get"][sold=""] ~ #navs, #navigation[in="get"][sold=""] ~ #navig {
+    visibility: visible;
+    filter: alpha(opacity=1);
+    opacity: 1;
+}
+
+/* 导航文字出现效果 */
+#navigation[in="get"][sold=""] ~ #navs {
+    margin-right: 70px;
+}
+
+/* 导航图标出现效果 */
+#navigation[in="get"][sold=""] ~ #navig {
+    margin-right: 20px;
+}
+
+/* 导航文字区 */
+#navs {
+    visibility: hidden;
+    margin-bottom: 70px;
+    margin-right: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+/* 导航文字 */
+#navs > a {
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 10px;
+    background: #fff;
+    text-shadow: 0 0 1px 10px #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.81);
+    text-align: left;
+}
+
+#navs > a:hover {
+    color: #fff;
+    background: #0f1ec2;
+}
+
+/* 导航图标区 */
+#navig {
+    bottom: 50px;
+    margin-right: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+/* 导航图标 */
+#navig > i {
+    color: #fff;
+    background: #ff0070;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#navig > i:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* 导航文字及图标样式 */
+#navs > *, #navig > * {
+    cursor: pointer;
+    display: block;
+    width: auto;
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+}
+
+/* 页面滚动隐藏 */
+[sold="scoll"] {
+    margin-bottom: -50px;
+    transform: rotate(180deg);
+}

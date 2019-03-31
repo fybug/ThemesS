@@ -1,0 +1,206 @@
+* {
+    z-index: 0;
+    box-sizing: border-box;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+div, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, img, ol, ul, li, table, th, td, p, span, a {
+    border: 0;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, span, b, s, i, small {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+img, input {
+    border: none;
+    vertical-align: middle;
+}
+
+body {
+    position: relative;
+    background: #FFF;
+    color: #000;
+    font-family: 微软雅黑, arial;
+    font-size: 10px;
+    text-align: center;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+th, td, input {
+    font-size: 12px;
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+button {
+    cursor: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+select {
+    _zoom: 1;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #f60;
+}
+
+/* 隐藏类 */
+.hidenow {
+    visibility: hidden;
+}
+
+/* 外框架 */
+.frmwork {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* 展示的部分的框架 */
+.showS {
+    position: relative;
+    padding: 0 10px;
+}
+
+/* 规定最大长度 */
+.showS > * {
+    margin: auto;
+    max-width: 660px;
+}
+
+/* 首尾样式 */
+.headAndFoot {
+    padding: 10px 0;
+    margin: auto;
+}
+
+/* 按钮样式 */
+.buttons {
+    background: #455cff;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 35px;
+    box-shadow: 0 0 5px #455cff;
+    border-radius: 4px;
+}
+
+/* 按钮动画 */
+.buttons:hover {
+    box-shadow: 0 0 15px #3141b4;
+}
+
+/* 图标 */
+.icon {
+    float: top;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #9f9f9f;
+}
+
+/* 图标动画 */
+.icon:hover {
+    box-shadow: 0 0 10px #282828;
+}
+
+/* 图标鼠标样式 */
+button .icon, a .icon {
+    cursor: alias;
+}
+
+.tr-1 {
+    transition: 1s;
+}
+
+.tr-05 {
+    transition: .5s;
+}
+
+/* Moblie M */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+/* Moblie L */
+@media screen and (min-width: 425px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    /* 图标 */
+    .icon {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    /* 规定最大长度 */
+    .showS > * {
+        max-width: 880px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    body {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
